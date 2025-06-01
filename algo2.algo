@@ -1,0 +1,80 @@
+//nom de l'algorithme
+#Algo sommedistinct
+
+// déclaration des variables
+
+tab1[n] tab2[m] tableau d'entier;
+i,j, s : entier
+pres : bool
+
+// debut de l'algorithme
+
+debut
+s=0;
+
+pour i allant de 0 à tab1[n] faire 
+pres = faux
+pour j allant de 0 à tab2[m] faire
+
+si tab1[i]=tab2[j] faire
+pres=vrai
+
+fsi
+fpour
+
+si pres=faux faire
+s=s+tab1[i];
+fsi fpour
+
+pour j allant de 0 à tab2[m] faire
+pres=faux
+pour i allant de 0 à tab1[n] faire
+si tab2[j] = tab1[i] faire
+pres= vrai
+fsi fpour
+si pres=faux faire
+s=s+tab2[j]
+fsi
+fpour
+
+fin Algo sommedistinct   //fin de l'algorithme
+
+
+Probleme 2
+
+//La procédure
+
+procédure productcheck (v1, v2, n , ps) {
+
+ps=0
+
+debut
+
+pour i allant de 0 à n-1  faire 
+
+ps= ps+v1*v2
+
+fpour
+fin procédure
+}
+
+
+
+#Algo dot_product 
+
+
+n,i,k, dimens : entier
+
+pour k de 0 à n faire
+pour i de 0 à n-1 faire
+
+productcheck(v1,v2,dimens,ps)
+
+si ps=0 Alors
+ecrir(ces vecteurs sont orthogonaux )
+sinon
+ecrir(ces vecteurs ne sont pas orthogonaux)
+fsi
+fpour
+
+fin algo
